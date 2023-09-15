@@ -1,19 +1,13 @@
-import './App.css';
-import PlayList from './Components/PlayList';
-import SearchBar from './Components/SearchBar';
-import SearchResults from './Components/SearchResults';
-import TrackList from './Components/TrackList';
+// import './App.css';
+import React from 'react';
+// import PlayList from './Components/PlayList';
+// import SearchBar from './Components/SearchBar';
+// import SearchResults from './Components/SearchResults';
+// import TrackList from './Components/TrackList';
 
 
 function App() {
-  return (
-    <div className="App">
-        <PlayList />
-        <SearchBar />
-        <SearchResults />
-        <TrackList />
-    </div>
-  );
+  return <h1>Jammming</h1>
 }
 
 export default App;

@@ -3,7 +3,7 @@ import React from 'react'
 function SearchBar() {
     return (
         <div className="SearchBar">
-        {/* Search input and button */}
+        <input placeholder="Enter a song, album, or artist" />
         <button>Search</button>
       </div>
     );
