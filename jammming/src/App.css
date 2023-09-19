@@ -1,6 +1,41 @@
 
-.appContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* App.css */
+
+/* Style for the entire app container */
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Style for the main heading */
+  h1 {
+    color: #333;
+  }
+  
+  /* Style for the TrackList container */
+  .TrackList {
+    margin-top: 20px;
+  }
+  
+  /* Style for each individual track item */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  li strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Add more styles as needed */
+  

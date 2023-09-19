@@ -1,15 +1,23 @@
-import React from 'react'
-import TrackList from './TrackList'; 
+// PlayList.js
 
+import React from 'react';
 
-function Playlist() {
-    return (
-        <div className="Playlist">
-        <h2>My Playlist</h2>
-        <TrackList />
-        <button>Save to Spotify</button>
-      </div>
-    );
+function PlayList(props) {
+  const { playList, onRemove } = props;
+
+  return (
+    <div className="PlayList">
+      <h2>My Custom PlayList</h2>
+      <ul>
+        {playList.map((track) => (
+          <li key={track.id}>
+            {track.name} - {track.artist} ({track.album})
+            <button onClick={() => onRemove(track)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default Playlist;
+export default PlayList;
